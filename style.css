@@ -1,0 +1,1611 @@
+@import url(https://db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember+Regular);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+
+body {
+    background: #00050d;
+    font-family: 'Amazon Ember', sans-serif;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav1{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 210px;
+    padding: 10px;
+    background: black;
+    border-radius: 6px;
+}
+
+.up_arr{
+    display: none;
+}
+
+.nav1 .menu_item:hover .down_arr{
+    display: none;
+}
+
+.nav1 .menu_item:hover .up_arr{
+    display: inline;
+}
+
+.nav1 .search_item:hover .down_arr{
+    display: none;
+}
+
+.nav1 .search_item:hover .up_arr{
+    display: inline;
+}
+
+.nav1 .logo{
+    font-size: 25px;
+    margin-top: 6px;
+}
+
+.nav1 .menu_opt{
+    margin-top: 9px;
+}
+
+.nav1 .menu_opt .menu_item{
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.nav1 .menu_opt .live{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.nav1 .menu_opt .menu_item span{
+    position: absolute;
+}
+
+.nav1 .search_opt .search_item{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.nav1 .search_opt .search_item span{
+    position: absolute;
+    margin-top: 2px;
+}
+
+.nav1 .search_opt{
+    margin-top: 7px;
+}
+
+.nav1 .user .user_logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+
+.nav1 .menu_item{
+    transition: .5s;
+}
+/* 
+.nav1 .menu_item:hover{
+    background: rgb(78, 75, 75);
+    padding: 19px 40px;
+} */
+
+.nav1 .search_item{
+    transition: .5s;
+}
+
+/* .nav1 .search_item:hover{
+    background: rgb(78, 75, 75);
+    padding: 19px 40px;
+} */
+
+/* .nav1 .search:hover{
+    background: rgb(78, 75, 75);
+    padding: 19px 30px;
+} */
+
+/* .nav1 .lang:hover{
+    background: rgb(78, 75, 75);
+    padding: 19px 30px;
+} */
+
+.nav1 .user{
+    transition: .5s;
+}
+
+.nav1 .user:hover{
+    background: rgb(78, 75, 75);
+    padding: 30px;
+    padding-bottom: 13px;
+}
+
+.nav2{
+    display: none;
+}
+
+.page_content{
+    margin-top: 70px;
+    margin-left: 115px;
+    transition: .5s;
+}
+
+.page_content .categorie_title{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.page_content .categorie_title .prime{
+    color: rgb(0, 140, 255);
+    margin-right: 10px;
+}
+
+.page_content .categorie_title .see_more a{
+    margin-left: 30px;
+}
+
+.page_content .categorie_title .see_more a ion-icon{
+    position: absolute;
+    margin-top: 3px;
+}
+
+.page_content .movie_content {
+    width: 93%;
+    height: 515px;
+    display: grid;
+    grid-auto-flow: column;
+    overflow: scroll;
+}
+
+.movie_content::-webkit-scrollbar{
+    display: none;
+}
+
+.carrousel{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.carrousel .carrousel_item{
+    display: inline-block;
+    width: 380px;
+    margin: 20px;
+    transition: all .5s;
+    position: relative;
+}
+
+.carrousel .carrousel_item .movie_item{
+    cursor: pointer;
+}
+
+.carrousel .carrousel_item .movie_item:hover img{
+    scale: 1.1;
+}
+
+.carrousel .carrousel_item .movie_item:hover .card_content{
+    scale: 1.1;
+    z-index: 99;
+    left: 0px;
+    top: 220px;
+    opacity: 100%;
+    transition: opacity .5s;
+}
+
+.carrousel .carrousel_item img{
+    width: 100%;
+    scale: 1;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.carrousel .carrousel_item .card_content{
+    background: black;
+    width: 340px;
+    scale: 1;
+    transition: .5s;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    opacity: 0%;
+    z-index: -1;
+    left: 0px;
+    top: 80px;
+    padding: 20px;
+    color: white;
+}
+
+.page_content1{
+    margin-top: -200px;
+    margin-left: 115px;
+    transition: .5s;
+}
+
+.page_content1 .categorie_title{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.page_content1 .categorie_title .prime{
+    color: rgb(0, 140, 255);
+    margin-right: 10px;
+}
+
+.page_content1 .categorie_title .see_more a{
+    margin-left: 30px;
+}
+
+.page_content1 .categorie_title .see_more a ion-icon{
+    position: absolute;
+    margin-top: 3px;
+}
+
+.page_content1 .movie_content {
+    width: 93%;
+    height: 515px;
+    display: grid;
+    grid-auto-flow: column;
+    overflow: scroll;
+}
+
+.carrousel .carrousel_item .card_content .prime_movie .icon{
+    color: rgb(0, 140, 255);
+    position: absolute;
+    font-size: 25px;
+    margin-top: -4px;
+}
+
+.carrousel .carrousel_item .card_content .prime_movie .text{
+    position: relative;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.carrousel .carrousel_item .card_content .movie_title{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 30px;
+}
+
+.carrousel .carrousel_item .card_content .title{
+    font-size: 19px;
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+.carrousel .carrousel_item .card_content .icons{
+    margin-top: -5px;
+}
+
+.carrousel .carrousel_item .card_content .movie_title .icons .icon a{
+    font-size: 30px;
+    background: rgb(41, 41, 41);
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    /* align-items: center; */
+    padding-bottom: 5px;
+    padding-top: 12px;
+    position: relative;
+    transition: .5s;
+}
+
+.carrousel .carrousel_item .card_content .icons .icon .watch_later_msg{
+    font-size: 16px;
+    margin-top: 55px;
+    margin-left: -85px;
+    margin-right: 0px;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    scale: 0;
+    /* transition: .5s; */
+}
+
+.carrousel .carrousel_item .card_content .watch_later:hover a{
+    background: white !important;
+    color: black;
+}
+
+.carrousel .carrousel_item .card_content .watch_later:hover .watch_later_msg{
+    scale: 1;
+    transition: .5s;
+}
+
+.carrousel .carrousel_item .card_content .icons .icon .watch_trailer_msg{
+    font-size: 16px;
+    margin-top: 55px;
+    margin-left: -110px;
+    margin-right: 0px;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    scale: 0;
+}
+
+.carrousel .carrousel_item .card_content .watch_trailer:hover a{
+    background: white !important;
+    color: black;
+}
+
+.carrousel .carrousel_item .card_content .watch_trailer:hover .watch_trailer_msg{
+    scale: 1;
+    transition: .5s;
+}
+
+.carrousel .carrousel_item .card_content .year_duretion{
+    margin-top: 13px;
+    margin-left: 4px;
+}
+
+.carrousel .carrousel_item .card_content .year_duretion span{
+    color: rgb(66, 66, 66);
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.carrousel .carrousel_item .card_content .year_duretion .censar{
+    background: rgb(66, 66, 66);
+    padding: 0px 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.carrousel .carrousel_item .card_content .trending_no{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+
+.carrousel .carrousel_item .card_content .description{
+    color: rgb(66, 66, 66);
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-left: 3px;
+}
+
+.carrousel .carrousel_item .card_content .description a{
+    color: rgb(66, 66, 66);
+}
+
+.carrousel .carrousel_item .card_content .description a:hover{
+    color: white;
+    transition: .5s;
+}
+
+
+@media only screen and (max-width: 600px){
+    .nav1{
+        display: none;
+    }
+    
+    .nav2{
+        display: inline;
+    }
+
+    .nav2{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        background: black;
+        border-radius: 6px;
+    }
+    
+    .up_arr{
+        display: none;
+    }
+    
+    .nav2 .menu_item:hover .down_arr{
+        display: none;
+    }
+    
+    .nav2 .menu_item:hover .up_arr{
+        display: inline;
+    }
+    
+    .nav2 .logo{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+    .nav2 .menu_opt{
+        margin-top: 9px;
+    }
+    
+    .nav2 .menu_opt .menu_item{
+        margin-right: 0px;
+        font-size: 16px;
+        scale: 1;
+    }
+    
+    .nav2 .menu_opt .menu_item span{
+        position: absolute;
+        margin-top: 2px;
+    }
+    
+    .nav2 .search_opt .search_item{
+        margin-left: 0px;
+        font-size: 17px;
+        margin-right: 20px;
+    }
+    
+    .nav2 .search_opt{
+        margin-top: 7px;
+    }
+    
+    .nav2 .user .user_logo{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-top: 5px;
+    }
+    
+    .nav2 .menu_item{
+        transition: .5s;
+    }
+
+    /* body coztamize */
+
+    .page_content{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    
+    .page_content .categorie_title{
+        font-size: 13px;
+    }
+    
+    .page_content .categorie_title .see_more a{
+        margin-left: 20px;
+    }
+    
+    .page_content .movie_content {
+        width: 90%;
+        height: 380px;
+    }
+    
+    .carrousel{
+        display: grid;
+        grid-auto-flow: column;
+    }
+    
+    .carrousel .carrousel_item{
+        width: 260px;
+        margin: 20px;
+        margin-right: 10px !important;
+    }
+    
+    .carrousel .carrousel_item .movie_item:hover .card_content{
+        top: 155px;
+    }
+    
+    .carrousel .carrousel_item .card_content{
+        width: 240px;
+        padding: 10px;
+    }
+    
+    .page_content1{
+        margin-top: -180px;
+        margin-left: 30px;
+    }
+    
+    .page_content1 .categorie_title{
+        font-size: 13px;
+    }
+    
+    .page_content1 .categorie_title .see_more a{
+        margin-left: 20px;
+    }
+    
+    .page_content1 .movie_content {
+        width: 90%;
+        height: 380px;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .icon{
+        font-size: 15px;
+        margin-top: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .text{
+        margin-left: 20px;
+        font-size: 13px;
+        margin-top: 6px;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title{
+        margin-top: 15px;
+    }
+    
+    .carrousel .carrousel_item .card_content .title{
+        font-size: 15px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons{
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title .icons .icon a{
+        font-size: 20px;
+        margin-right: 5px;
+        padding: 7px;
+        padding-bottom: 2px;
+        padding-top: 9px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_later_msg{
+        font-size: 10px;
+        margin-top: 35px;
+        margin-left: -57.5px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_trailer_msg{
+        font-size: 10px;
+        margin-top: 35px;
+        margin-left: -60px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion{
+        margin-top: 6px;
+        margin-left: 4px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion span{
+        font-size: 12px;
+        font-weight: 800;
+        margin-right: 7px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion .censar{
+        padding: 0px 7px;
+    }
+    
+    .carrousel .carrousel_item .card_content .trending_no{
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 7px;
+    }
+    
+    .carrousel .carrousel_item .card_content .description{
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 7px;
+    }
+    
+}
+
+@media only screen and (min-width: 600px){
+    .nav1{
+        margin: 30px 10px;
+        padding: 7px;
+    }
+    
+    .nav1 .logo{
+        font-size: 15px;
+        margin-top: 6px;
+    }
+    
+    .nav1 .menu_opt{
+        margin-top: 9px;
+    }
+    
+    .nav1 .menu_opt .menu_item{
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    
+    .nav1 .menu_opt .live{
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    
+    .nav1 .menu_opt .menu_item span{
+        position: absolute;
+    }
+    
+    .nav1 .search_opt .search_item{
+        margin-right: 20px;
+        font-size: 15px;
+    }
+
+    /* body coztamize */
+
+    .page_content{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    
+    .page_content .categorie_title{
+        font-size: 15px;
+    }
+    
+    .page_content .categorie_title .see_more a{
+        margin-left: 20px;
+    }
+    
+    .page_content .movie_content {
+        width: 90%;
+        height: 450px;
+    }
+    
+    .carrousel .carrousel_item{
+        width: 300px;
+        margin: 20px;
+        margin-right: 10px !important;
+    }
+    
+    .carrousel .carrousel_item .movie_item:hover .card_content{
+        top: 175px;
+    }
+    
+    .carrousel .carrousel_item .card_content{
+        width: 260px;
+        padding: 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .page_content1{
+        margin-top: -180px;
+        margin-left: 30px;
+    }
+    
+    .page_content1 .categorie_title{
+        font-size: 15px;
+    }
+    
+    .page_content1 .categorie_title .see_more a{
+        margin-left: 20px;
+    }
+    
+    .page_content1 .movie_content {
+        width: 90%;
+        height: 450px;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .icon{
+        font-size: 20px;
+        margin-top: -3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .text{
+        margin-left: 25px;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+    
+    .carrousel .carrousel_item .card_content .title{
+        font-size: 15px;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title .icons .icon a{
+        font-size: 25px;
+        margin-right: 5px;
+        padding: 10px;
+        padding-bottom: 5px;
+        padding-top: 12px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_later_msg{
+        font-size: 13px;
+        margin-top: 45px;
+        margin-left: -73px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_trailer_msg{
+        font-size: 13px;
+        margin-top: 45px;
+        margin-left: -76px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion{
+        margin-top: 12px;
+        margin-left: 4px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion span{
+        font-size: 14px;
+        font-weight: 800;
+        margin-right: 7px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion .censar{
+        padding: 0px 7px;
+    }
+    
+    .carrousel .carrousel_item .card_content .trending_no{
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 7px;
+    }
+    
+    .carrousel .carrousel_item .card_content .description{
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 7px;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .nav1{
+        display: none;
+    }
+    
+    .nav2{
+        display: inline;
+    }
+
+    .nav2{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+        background: black;
+        border-radius: 6px;
+    }
+    
+    .up_arr{
+        display: none;
+    }
+    
+    .nav2 .menu_item:hover .down_arr{
+        display: none;
+    }
+    
+    .nav2 .menu_item:hover .up_arr{
+        display: inline;
+    }
+    
+    .nav2 .logo{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    .nav2 .menu_opt{
+        margin-top: 9px;
+    }
+    
+    .nav2 .menu_opt .menu_item{
+        margin-right: 0px;
+        font-size: 13px;
+        scale: 1;
+    }
+    
+    .nav2 .menu_opt .menu_item span{
+        position: absolute;
+        margin-top: 2px;
+    }
+    
+    .nav2 .search_opt .search_item{
+        margin-left: 0px;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    
+    .nav2 .search_opt{
+        margin-top: 7px;
+    }
+    
+    .nav2 .user .user_logo{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-top: 5px;
+    }
+    
+    .nav2 .menu_item{
+        transition: .5s;
+    }
+
+    /* body coztamize */
+
+    .page_content{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    
+    .page_content .categorie_title{
+        font-size: 10px;
+    }
+    
+    .page_content .categorie_title .see_more a{
+        margin-left: 10px;
+    }
+    
+    .page_content .movie_content {
+        width: 90%;
+        height: 380px;
+    }
+    
+    .carrousel{
+        display: grid;
+        grid-auto-flow: column;
+    }
+    
+    .carrousel .carrousel_item{
+        width: 260px;
+        margin: 20px;
+        margin-right: 10px !important;
+    }
+    
+    .carrousel .carrousel_item .movie_item:hover .card_content{
+        top: 155px;
+    }
+    
+    .carrousel .carrousel_item .card_content{
+        width: 240px;
+        padding: 10px;
+    }
+    
+    .page_content1{
+        margin-top: -240px;
+        margin-left: 30px;
+    }
+    
+    .page_content1 .categorie_title{
+        font-size: 10px;
+    }
+    
+    .page_content1 .categorie_title .see_more a{
+        margin-left: 10px;
+    }
+    
+    .page_content1 .movie_content {
+        width: 90%;
+        height: 380px;
+    }
+
+    .carrousel .carrousel_item{
+        width: 180px;
+        margin: 10px;
+    }
+
+    .carrousel .carrousel_item .card_content{
+        left: 0px;
+        margin-top: -45px;
+        width: 160px;
+        padding: 10px;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .icon{
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .text{
+        margin-left: 20px;
+        font-size: 10px;
+        margin-top: 6px;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title{
+        margin-top: 15px;
+    }
+    
+    .carrousel .carrousel_item .card_content .title{
+        font-size: 10px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons{
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title .icons .icon a{
+        font-size: 10px;
+        margin-right: 5px;
+        padding: 5px;
+        padding-bottom: 2px;
+        padding-top: 6px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_later_msg{
+        font-size: 7px;
+        margin-top: 25px;
+        margin-left: -43px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_trailer_msg{
+        font-size: 7px;
+        margin-top: 25px;
+        margin-left: -46px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion{
+        margin-top: 5px;
+        margin-left: 4px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion span{
+        font-size: 7px;
+        font-weight: 800;
+        margin-right: 5px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion .censar{
+        padding: 0px 5px;
+    }
+    
+    .carrousel .carrousel_item .card_content .trending_no{
+        font-size: 9px;
+        font-weight: 700;
+        margin-top: 7px;
+    }
+    
+    .carrousel .carrousel_item .card_content .description{
+        font-size: 9px;
+        font-weight: 700;
+        margin-top: 7px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .nav1{
+        margin: 30px 20px;
+        padding: 10px;
+    }
+    
+    .page_content{
+        margin-top: 70px;
+        margin-left: 115px;
+        transition: .5s;
+    }
+    
+    .page_content .categorie_title{
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .page_content .categorie_title .prime{
+        color: rgb(0, 140, 255);
+        margin-right: 10px;
+    }
+    
+    .page_content .categorie_title .see_more a{
+        margin-left: 30px;
+    }
+    
+    .page_content .categorie_title .see_more a ion-icon{
+        position: absolute;
+        margin-top: 3px;
+    }
+    
+    .page_content .movie_content {
+        width: 93%;
+        height: 515px;
+        display: grid;
+        grid-auto-flow: column;
+        overflow: scroll;
+    }
+    
+    .movie_content::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .carrousel{
+        display: grid;
+        grid-auto-flow: column;
+    }
+    
+    .carrousel .carrousel_item{
+        display: inline-block;
+        width: 380px;
+        margin: 20px;
+        transition: all .5s;
+        position: relative;
+    }
+    
+    .carrousel .carrousel_item .movie_item{
+        cursor: pointer;
+    }
+    
+    .carrousel .carrousel_item .movie_item:hover img{
+        scale: 1.1;
+    }
+    
+    .carrousel .carrousel_item .movie_item:hover .card_content{
+        scale: 1.1;
+        z-index: 99;
+        left: 0px;
+        top: 220px;
+        opacity: 100%;
+        transition: opacity .5s;
+    }
+    
+    .carrousel .carrousel_item img{
+        width: 100%;
+        scale: 1;
+        transition: .5s;
+        border-radius: 10px;
+    }
+    
+    .carrousel .carrousel_item .card_content{
+        background: black;
+        width: 340px;
+        scale: 1;
+        transition: .5s;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: absolute;
+        opacity: 0%;
+        z-index: -1;
+        left: 0px;
+        top: 80px;
+        padding: 20px;
+        color: white;
+    }
+    
+    .page_content1{
+        margin-top: -200px;
+        margin-left: 115px;
+        transition: .5s;
+    }
+    
+    .page_content1 .categorie_title{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .page_content1 .categorie_title .prime{
+        color: rgb(0, 140, 255);
+        margin-right: 10px;
+    }
+    
+    .page_content1 .categorie_title .see_more a{
+        margin-left: 30px;
+    }
+    
+    .page_content1 .categorie_title .see_more a ion-icon{
+        position: absolute;
+        margin-top: 3px;
+    }
+    
+    .page_content1 .movie_content {
+        width: 93%;
+        height: 515px;
+        display: grid;
+        grid-auto-flow: column;
+        overflow: scroll;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .icon{
+        color: rgb(0, 140, 255);
+        position: absolute;
+        font-size: 25px;
+        margin-top: -4px;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .text{
+        position: relative;
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-top: 30px;
+    }
+    
+    .carrousel .carrousel_item .card_content .title{
+        font-size: 19px;
+        font-weight: 700;
+        margin-left: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons{
+        margin-top: -5px;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title .icons .icon a{
+        font-size: 30px;
+        background: rgb(41, 41, 41);
+        margin-right: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        /* align-items: center; */
+        padding-bottom: 5px;
+        padding-top: 12px;
+        position: relative;
+        transition: .5s;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_later_msg{
+        font-size: 16px;
+        margin-top: 55px;
+        margin-left: -85px;
+        margin-right: 0px;
+        position: absolute;
+        z-index: 100;
+        background: white;
+        color: black;
+        font-weight: 700;
+        padding: 10px;
+        border-radius: 5px;
+        scale: 0;
+        /* transition: .5s; */
+    }
+    
+    .carrousel .carrousel_item .card_content .watch_later:hover a{
+        background: white !important;
+        color: black;
+    }
+    
+    .carrousel .carrousel_item .card_content .watch_later:hover .watch_later_msg{
+        scale: 1;
+        transition: .5s;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_trailer_msg{
+        font-size: 16px;
+        margin-top: 55px;
+        margin-left: -110px;
+        margin-right: 0px;
+        position: absolute;
+        z-index: 100;
+        background: white;
+        color: black;
+        font-weight: 700;
+        padding: 10px;
+        border-radius: 5px;
+        scale: 0;
+    }
+    
+    .carrousel .carrousel_item .card_content .watch_trailer:hover a{
+        background: white !important;
+        color: black;
+    }
+    
+    .carrousel .carrousel_item .card_content .watch_trailer:hover .watch_trailer_msg{
+        scale: 1;
+        transition: .5s;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion{
+        margin-top: 13px;
+        margin-left: 4px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion span{
+        color: rgb(66, 66, 66);
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion .censar{
+        background: rgb(66, 66, 66);
+        padding: 0px 10px;
+        color: white;
+        border-radius: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .trending_no{
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 12px;
+        margin-left: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .description{
+        color: rgb(66, 66, 66);
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 12px;
+        margin-left: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .description a{
+        color: rgb(66, 66, 66);
+    }
+    
+    .carrousel .carrousel_item .card_content .description a:hover{
+        color: white;
+        transition: .5s;
+    }
+}
+
+
+@media only screen and (min-width: 1281px){
+    .nav1{
+        margin: 30px 210px;
+        padding: 10px;
+    }
+    
+    .up_arr{
+        display: none;
+    }
+    
+    .nav1 .menu_item:hover .down_arr{
+        display: none;
+    }
+    
+    .nav1 .menu_item:hover .up_arr{
+        display: inline;
+    }
+    
+    .nav1 .search_item:hover .down_arr{
+        display: none;
+    }
+    
+    .nav1 .search_item:hover .up_arr{
+        display: inline;
+    }
+    
+    .nav1 .logo{
+        font-size: 25px;
+        margin-top: 6px;
+    }
+    
+    .nav1 .menu_opt{
+        margin-top: 9px;
+    }
+    
+    .nav1 .menu_opt .menu_item{
+        margin-right: 40px;
+        font-size: 20px;
+    }
+    
+    .nav1 .menu_opt .live{
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    
+    .nav1 .menu_opt .menu_item span{
+        position: absolute;
+    }
+    
+    .nav1 .search_opt .search_item{
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    
+    .nav1 .search_opt .search_item span{
+        position: absolute;
+        margin-top: 2px;
+    }
+    
+    .nav1 .search_opt{
+        margin-top: 7px;
+    }
+    
+    .nav1 .user .user_logo{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 3px;
+    }
+    
+    .nav1 .menu_item{
+        transition: .5s;
+    }
+    
+    .nav1 .menu_item:hover{
+        background: rgb(78, 75, 75);
+        padding: 19px 40px;
+    }
+    
+    .nav1 .search_item{
+        transition: .5s;
+    }
+    
+    .nav1 .search_item:hover{
+        background: rgb(78, 75, 75);
+        padding: 19px 40px;
+    }
+    
+    .nav1 .search:hover{
+        background: rgb(78, 75, 75);
+        padding: 19px 30px;
+    }
+    
+    .nav1 .lang:hover{
+        background: rgb(78, 75, 75);
+        padding: 19px 30px;
+    }
+    
+    .nav1 .user{
+        transition: .5s;
+    }
+    
+    .nav1 .user:hover{
+        background: rgb(78, 75, 75);
+        padding: 30px;
+        padding-bottom: 13px;
+    }
+    
+    .nav2{
+        display: none;
+    }
+    
+    .page_content{
+        margin-top: 70px;
+        margin-left: 115px;
+        transition: .5s;
+    }
+    
+    .page_content .categorie_title{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .page_content .categorie_title .prime{
+        color: rgb(0, 140, 255);
+        margin-right: 10px;
+    }
+    
+    .page_content .categorie_title .see_more a{
+        margin-left: 30px;
+    }
+    
+    .page_content .categorie_title .see_more a ion-icon{
+        position: absolute;
+        margin-top: 3px;
+    }
+    
+    .page_content .movie_content {
+        width: 93%;
+        height: 515px;
+        display: grid;
+        grid-auto-flow: column;
+        overflow: scroll;
+    }
+    
+    .movie_content::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .carrousel{
+        display: grid;
+        grid-auto-flow: column;
+    }
+    
+    .carrousel .carrousel_item{
+        display: inline-block;
+        width: 380px;
+        margin: 20px;
+        transition: all .5s;
+        position: relative;
+    }
+    
+    .carrousel .carrousel_item .movie_item{
+        cursor: pointer;
+    }
+    
+    .carrousel .carrousel_item .movie_item:hover img{
+        scale: 1.1;
+    }
+    
+    .carrousel .carrousel_item .movie_item:hover .card_content{
+        scale: 1.1;
+        z-index: 99;
+        left: 0px;
+        top: 220px;
+        opacity: 100%;
+        transition: opacity .5s;
+    }
+    
+    .carrousel .carrousel_item img{
+        width: 100%;
+        scale: 1;
+        transition: .5s;
+        border-radius: 10px;
+    }
+    
+    .carrousel .carrousel_item .card_content{
+        background: black;
+        width: 340px;
+        scale: 1;
+        transition: .5s;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: absolute;
+        opacity: 0%;
+        z-index: -1;
+        left: 0px;
+        top: 80px;
+        padding: 20px;
+        color: white;
+    }
+    
+    .page_content1{
+        margin-top: -200px;
+        margin-left: 115px;
+        transition: .5s;
+    }
+    
+    .page_content1 .categorie_title{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .page_content1 .categorie_title .prime{
+        color: rgb(0, 140, 255);
+        margin-right: 10px;
+    }
+    
+    .page_content1 .categorie_title .see_more a{
+        margin-left: 30px;
+    }
+    
+    .page_content1 .categorie_title .see_more a ion-icon{
+        position: absolute;
+        margin-top: 3px;
+    }
+    
+    .page_content1 .movie_content {
+        width: 93%;
+        height: 515px;
+        display: grid;
+        grid-auto-flow: column;
+        overflow: scroll;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .icon{
+        color: rgb(0, 140, 255);
+        position: absolute;
+        font-size: 25px;
+        margin-top: -4px;
+    }
+    
+    .carrousel .carrousel_item .card_content .prime_movie .text{
+        position: relative;
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-top: 30px;
+    }
+    
+    .carrousel .carrousel_item .card_content .title{
+        font-size: 19px;
+        font-weight: 700;
+        margin-left: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons{
+        margin-top: -5px;
+    }
+    
+    .carrousel .carrousel_item .card_content .movie_title .icons .icon a{
+        font-size: 30px;
+        background: rgb(41, 41, 41);
+        margin-right: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        /* align-items: center; */
+        padding-bottom: 5px;
+        padding-top: 12px;
+        position: relative;
+        transition: .5s;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_later_msg{
+        font-size: 16px;
+        margin-top: 55px;
+        margin-left: -85px;
+        margin-right: 0px;
+        position: absolute;
+        z-index: 100;
+        background: white;
+        color: black;
+        font-weight: 700;
+        padding: 10px;
+        border-radius: 5px;
+        scale: 0;
+        /* transition: .5s; */
+    }
+    
+    .carrousel .carrousel_item .card_content .watch_later:hover a{
+        background: white !important;
+        color: black;
+    }
+    
+    .carrousel .carrousel_item .card_content .watch_later:hover .watch_later_msg{
+        scale: 1;
+        transition: .5s;
+    }
+    
+    .carrousel .carrousel_item .card_content .icons .icon .watch_trailer_msg{
+        font-size: 16px;
+        margin-top: 55px;
+        margin-left: -110px;
+        margin-right: 0px;
+        position: absolute;
+        z-index: 100;
+        background: white;
+        color: black;
+        font-weight: 700;
+        padding: 10px;
+        border-radius: 5px;
+        scale: 0;
+    }
+    
+    .carrousel .carrousel_item .card_content .watch_trailer:hover a{
+        background: white !important;
+        color: black;
+    }
+    
+    .carrousel .carrousel_item .card_content .watch_trailer:hover .watch_trailer_msg{
+        scale: 1;
+        transition: .5s;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion{
+        margin-top: 13px;
+        margin-left: 4px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion span{
+        color: rgb(66, 66, 66);
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    
+    .carrousel .carrousel_item .card_content .year_duretion .censar{
+        background: rgb(66, 66, 66);
+        padding: 0px 10px;
+        color: white;
+        border-radius: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .trending_no{
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 12px;
+        margin-left: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .description{
+        color: rgb(66, 66, 66);
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 12px;
+        margin-left: 3px;
+    }
+    
+    .carrousel .carrousel_item .card_content .description a{
+        color: rgb(66, 66, 66);
+    }
+    
+    .carrousel .carrousel_item .card_content .description a:hover{
+        color: white;
+        transition: .5s;
+    }
+}
